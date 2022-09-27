@@ -67,11 +67,16 @@ function draw() {
     ball.x += 10
     console.log(ball.y)
   }
-  drawSprites()
-
   if (ball.isTouching(ponto)) {
     placar += 3
   }
+
+  fill("white")
+  textSize(30)
+  text("placar: "+placar, 20, 20)
+  
+  drawSprites()
+
 
 }
 
